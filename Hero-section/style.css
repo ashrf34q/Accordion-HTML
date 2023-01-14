@@ -8,3 +8,83 @@ body {
   font-family: "Rubik", sans-serif;
   color: #444;
 }
+
+nav {
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+
+header {
+  height: 100vh;
+  position: relative;
+  color: #fff;
+
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(../images/hero.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.header-container {
+  width: 1200px;
+  position: absolute;
+  /* In realtion to parent element */
+  left: 50%;
+  top: 50%;
+
+  /* In relation to the current element */
+  transform: translate(-50%, -50%);
+}
+
+.inner-container {
+  /* In relation to header-container */
+  width: 50%;
+}
+
+h1 {
+  font-size: 52px;
+  line-height: 1.05;
+  margin-bottom: 32px;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 48px;
+  line-height: 1.6;
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 9px;
+  background-color: #e8590c;
+  color: #fff;
+  text-decoration: none; /* Removes the underline */
+  display: inline-block;
+  padding: 16px 32px;
+}
+
+h2 {
+  font-size: 44px;
+  margin-bottom: 48px;
+}
+
+section {
+  padding: 96px 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+section {
+  overflow: hidden;
+}
